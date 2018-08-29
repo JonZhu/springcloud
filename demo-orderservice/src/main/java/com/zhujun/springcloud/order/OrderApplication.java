@@ -3,7 +3,6 @@ package com.zhujun.springcloud.order;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.cloud.netflix.turbine.EnableTurbine;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -14,7 +13,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @time 2018/8/28 14:57
  */
 @SpringBootApplication
-@EnableEurekaClient
 @EnableHystrixDashboard
 @EnableTurbine
 @EnableFeignClients

@@ -11,11 +11,11 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka1
   client:
     serviceUrl:
       #eureka高可用时,将自己注册到其它eureka服务上
-      defaultZone: http://localhost:8702/eureka,http://localhost:8703/eureka
+      defaultZone: http://eureka2:8702/eureka,http://eureka3:8703/eureka
 
 
 ---
@@ -27,10 +27,10 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka2
   client:
     serviceUrl:
-      defaultZone: http://localhost:8701/eureka,http://localhost:8703/eureka
+      defaultZone: http://eureka1:8701/eureka,http://eureka3:8703/eureka
 
 ---
 spring:
@@ -41,7 +41,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka3
   client:
     serviceUrl:
-      defaultZone: http://localhost:8701/eureka,http://localhost:8702/eureka
+      defaultZone: http://eureka1:8701/eureka,http://eureka2:8702/eureka
