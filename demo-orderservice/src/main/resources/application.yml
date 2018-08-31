@@ -14,3 +14,10 @@ eureka:
     serviceUrl:
       #eureka高可用时,将自己注册到其它eureka服务上
       defaultZone: http://42.123.99.25:8701/eureka,http://42.123.99.25:8702/eureka,http://42.123.99.25:8703/eureka
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
