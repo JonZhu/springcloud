@@ -13,6 +13,7 @@
         <module>springcloud-eurekaserver</module>
         <module>demo-userservice</module>
         <module>demo-orderservice</module>
+        <module>springcloud-hystrix-dashboard</module>
     </modules>
 
     <parent>
